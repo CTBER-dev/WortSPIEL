@@ -1,0 +1,103 @@
+<!doctype html>
+<!--
+  WortSPIEL – Wörterduell – Support
+  Entwickler: Timmi
+
+  Diese Datei neben index.html ins Repository ctber-dev/WortSPIEL legen.
+  Adresse: https://ctber-dev.github.io/WortSPIEL/support.html  ("Support-URL" in App Store Connect)
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WortSPIEL – Wörterduell – Hilfe &amp; Kontakt</title>
+<style>
+  :root { --bg: #FFFFFF; --fg: #1E1A2E; --muted: #5F5A72; --accent: #5B3FD9; --gold: #F2B233; --line: #E6E2F0; --card: #F6F4FB; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #14111F; --fg: #EEEBF7; --muted: #A8A2BC; --accent: #A893FF; --gold: #FFC94D; --line: #2D2840; --card: #1D1930; color-scheme: dark; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+         padding: 40px max(20px, env(safe-area-inset-right)) 64px max(20px, env(safe-area-inset-left)); }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 36px 0 8px; }
+  .meta { color: var(--muted); margin: 0 0 28px; }
+  .contact { background: var(--card); border-left: 4px solid var(--accent); border-radius: 10px; padding: 14px 18px; }
+  .contact p { margin: 4px 0; }
+  details { border-bottom: 1px solid var(--line); padding: 10px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  details p, details ul { margin: 8px 0 4px; }
+  ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>WortSPIEL – Wörterduell</h1>
+  <p class="meta">Hilfe &amp; Kontakt · für iPhone und iPad ab iOS 16</p>
+
+  <div class="contact">
+    <p><strong>Fragen, Fehler oder Ideen?</strong> Schreib uns – wir antworten so schnell wie möglich.</p>
+    <p>E-Mail: <a href="mailto:homepage@timmi.nl?subject=WortSPIEL%20Support">homepage@timmi.nl</a></p>
+    <p>Hilfreich: Gerät, iOS-Version und die Versionsnummer der App (steht im App Store unter „Versionsverlauf“).</p>
+  </div>
+
+  <h2>So wird gespielt</h2>
+  <p>Alle bekommen pro Runde dieselben 12 Buchstaben und haben 40 Sekunden Zeit, daraus das wertvollste Wort zu legen. Gültig sind Wörter ab 2 Buchstaben, die im deutschen Wörterbuch stehen. Punkte gibt es für die Buchstabenwerte, für lange Wörter und fürs schnelle Abgeben (Tempo-Bonus: 40–31 Sekunden auf der Uhr +5, 30–21 Sekunden +3, 20–11 Sekunden +1).</p>
+
+  <h2>Häufige Fragen</h2>
+
+  <details>
+    <summary>Die Geräte finden sich nicht – was tun?</summary>
+    <ul>
+      <li>Alle Geräte im <strong>selben WLAN</strong> verbinden. Ohne gemeinsames WLAN klappt es zwischen iPhone und iPad, solange WLAN eingeschaltet ist.</li>
+      <li>Den Zugriff auf das <strong>lokale Netzwerk</strong> erlauben: Einstellungen › Datenschutz &amp; Sicherheit › Lokales Netzwerk › WortSPIEL einschalten.</li>
+      <li><strong>Gäste-WLANs</strong> (Hotel, Café, Büro) blockieren oft, dass sich Geräte gegenseitig sehen. Dann hilft ein privates WLAN oder der persönliche Hotspot eines Mitspielers.</li>
+      <li>Alle brauchen <strong>dieselbe App-Version</strong>. Sonst erscheint „Unterschiedliche Versionen“ – bitte alle im App Store aktualisieren.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Ich kann einer Runde nicht beitreten.</summary>
+    <p>Eine Runde hat höchstens 8 Plätze für Menschen. Treten mehr Menschen bei, als neben den Bots Platz ist, lässt die App beim Start überzählige Bots weg. Hat das Spiel schon begonnen, kannst du erst wieder beitreten, wenn der Gastgeber zurück in die Lobby geht.</p>
+  </details>
+
+  <details>
+    <summary>Ich bin allein – kann ich trotzdem spielen?</summary>
+    <p>Ja. Tippe auf „Spiel erstellen“, dann in der Lobby auf „Bot hinzufügen“ und wähle eine Stufe: Leicht, Mittel oder Unschlagbar. Jedes Spiel braucht mindestens 2 Spieler – Bots zählen mit.</p>
+  </details>
+
+  <details>
+    <summary>Mein Wort wurde abgelehnt, obwohl es richtig ist.</summary>
+    <p>WortSPIEL prüft mit dem deutschen Wörterbuch, das in iOS eingebaut ist – auf dem Gerät des Gastgebers. Das ist nicht der Duden: Manche seltenen Wörter fehlen, dafür kennt es auch einige Namen und Abkürzungen. Schick uns gern das Wort, dann schauen wir es uns an.</p>
+  </details>
+
+  <details>
+    <summary>Wo ist der Knopf „Prüfen“?</summary>
+    <p>Der Gastgeber kann „Prüfen“ in der Lobby ein- und ausschalten. Fehlt der Knopf, ist die Funktion in dieser Runde aus. Ist er ausgegraut, ist dein Wort noch kürzer als 2 Buchstaben, du hast schon abgegeben oder die Prüfung läuft gerade.</p>
+  </details>
+
+  <details>
+    <summary>Wie sortiere ich meine Buchstaben?</summary>
+    <p>Einen Stein gedrückt halten und an eine andere Stelle ziehen. „Mischen“ ordnet zufällig neu, „A–Z“ alphabetisch. Ein schon gelegtes Wort bleibt dabei erhalten.</p>
+  </details>
+
+  <details>
+    <summary>Die Verbindung ist kurz abgebrochen.</summary>
+    <p>Kein Problem: Die App verbindet sich automatisch neu, dein Platz bleibt 20 Sekunden lang reserviert. Das gilt auch, wenn du die App kurz in den Hintergrund schickst. Verlässt der Gastgeber das Spiel, endet die Runde für alle.</p>
+  </details>
+
+  <details>
+    <summary>Kostet das Spiel Daten oder braucht es Internet?</summary>
+    <p>Nein. WortSPIEL hat keinen Server und braucht kein Internet. Gespielt wird nur im lokalen Netzwerk. Es gibt keine Werbung, kein Tracking und keine In-App-Käufe.</p>
+  </details>
+
+  <h2>Datenschutz</h2>
+  <p>Alles zum Umgang mit deinen Daten steht in der <a href="./">Datenschutzerklärung</a>.</p>
+
+  <footer>WortSPIEL – Wörterduell · Christian Timmig · Walzel Strasse 7 · 13581 Berlin · <a href="mailto:homepage@timmi.nl">homepage@timmi.nl</a></footer>
+</main>
+</body>
+</html>
